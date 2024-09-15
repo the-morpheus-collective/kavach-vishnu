@@ -29,7 +29,7 @@ var goal_icon = L.icon({
 const Map = () => {
   const mapContainer = useRef(null);
   const map = useRef(null);
-  const center = { lng: 75, lat: 52.507932 };
+  const center = { lng: 76.5754, lat: 30.7688 };
   const [zoom] = useState(12);
 
   useEffect(() => {
@@ -45,7 +45,7 @@ const Map = () => {
     .bindPopup("<b>Pranjal Rastogi</b><br>current location")
     .addTo(map.current);
 
-    L.marker([center.lat+1, center.lng+1], {icon: goal_icon})
+    L.marker([30.7686, 76.5849], {icon: goal_icon})
     .bindPopup("<b>Pranjal Rastogi's</b><br>destination is here")
     .addTo(map.current);
 
